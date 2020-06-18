@@ -1,0 +1,44 @@
+body,
+html {
+	font-family: 'lato';
+	font-weight: 400;
+	font-style: normal;
+	color: #2c2323;
+}
+
+.heading-primary {
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	line-height: 1.4;
+	@media screen and (max-width: 576px) {
+		font-size: 35px;
+		line-height: 1.2;
+	}
+}
+.heading-secondary {
+	font-size: 30px;
+	text-align: center;
+	color: #ffc422;
+}
+.main__project-link {
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+.main__project-github {
+	font-size: 120px;
+	// color: #ffc422;
+	color: #2c2323;
+}
+.footer__link {
+	font-size: 16px;
+	color: #fff;
+	transition: all ease 0.4s;
+	&:hover {
+		color: #ffc422;
+	}
+	i {
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,22 @@
+.fallback {
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	width: 100px;
+	height: 100px;
+	background-color: #ffc422;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	line-height: 1.2;
+	z-index: 99999;
+	transition: all ease 0.4s;
+	text-decoration: none;
+}
+.fallback:hover {
+	scale: 1.1;
+}
