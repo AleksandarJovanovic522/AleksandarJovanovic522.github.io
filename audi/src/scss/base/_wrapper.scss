@@ -1,0 +1,17 @@
+.wrapper {
+	width: 1140/1440 * 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	@media screen and (max-width: 992px) {
+		width: 85%;
+	}
+	// @media screen and (max-width: 576px) {
+	// 	padding: 0;
+	// }
+}
+// // .wrapper--flex {
+// // 	display: flex;
+// // 	@media screen and (max-width: 992px) {
+// // 		flex-wrap: wrap;
+// // 	}
+// // }
