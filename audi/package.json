@@ -1,0 +1,22 @@
+{
+  "name": "zadatak-01",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-iconfont": "^10.0.3",
+    "gulp-iconfont-css": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-lint": "^1.4.0",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "gulp-v3": "^3.12.1"
+  },
+  "description": ""
+}
