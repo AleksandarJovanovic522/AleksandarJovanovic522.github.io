@@ -195,7 +195,9 @@ body {
   font-family: "Montserrat", Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #ccc5c5; }
+  font-size: 14px;
+  color: #ccc5c5;
+  letter-spacing: 0; }
 
 .span--red {
   display: inline-block;
@@ -230,7 +232,7 @@ body {
 .nav__drop-link {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 14px;
+  letter-spacing: 0;
   letter-spacing: 1px;
   line-height: 16px;
   text-align: center; }
@@ -260,7 +262,6 @@ body {
 
 .hero-slider__paragraph {
   color: #ccc5c5;
-  font-size: 14px;
   letter-spacing: 0;
   line-height: 26px; }
   @media screen and (max-width: 992px) {
@@ -275,7 +276,6 @@ body {
 .about__img-text {
   opacity: 0.5;
   color: #fff;
-  font-size: 14px;
   font-style: italic;
   letter-spacing: 0;
   line-height: 25px; }
@@ -302,7 +302,6 @@ body {
       line-height: 22px; } }
   @media screen and (max-width: 576px) {
     .about__primary-paragraph {
-      font-size: 14px;
       line-height: 20px; } }
 
 .about__secondary-paragraph {
@@ -312,7 +311,6 @@ body {
   line-height: 25px; }
   @media screen and (max-width: 992px) {
     .about__secondary-paragraph {
-      font-size: 14px;
       line-height: 20px; } }
   @media screen and (max-width: 576px) {
     .about__secondary-paragraph {
@@ -324,12 +322,10 @@ body {
 
 .featured__paragraph {
   color: #ccc5c5;
-  font-size: 14px;
   letter-spacing: 0;
   line-height: 26px; }
   @media screen and (max-width: 992px) {
     .featured__paragraph {
-      font-size: 14px;
       line-height: 20px; } }
 
 .featured__spec-primary {
@@ -357,7 +353,6 @@ body {
 
 .featured__spec-tertiray {
   color: #fff;
-  font-size: 14px;
   font-style: italic;
   letter-spacing: 0;
   line-height: 18px; }
@@ -365,6 +360,81 @@ body {
     .featured__spec-tertiray {
       font-size: 12px;
       line-height: 16px; } }
+
+.promo__heading {
+  color: #212121;
+  text-align: center; }
+
+.promo__caption {
+  color: #929aad;
+  line-height: 18px;
+  text-align: center; }
+  @media screen and (max-width: 992px) {
+    .promo__caption {
+      font-size: 12px; } }
+
+.promo__article-heading {
+  color: #212121;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center; }
+  @media screen and (max-width: 576px) {
+    .promo__article-heading {
+      font-size: 19px; } }
+
+.promo__item {
+  color: #929aad;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 30px; }
+  @media screen and (max-width: 992px) {
+    .promo__item {
+      font-size: 12px; } }
+
+.promo__price-caption {
+  color: #929aad;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 13px; }
+  @media screen and (max-width: 992px) {
+    .promo__price-caption {
+      font-size: 12px; } }
+  @media screen and (max-width: 576px) {
+    .promo__price-caption {
+      text-align: center; } }
+  @media screen and (max-width: 576px) {
+    .promo__price-caption {
+      font-size: 13px; } }
+
+.promo__price-value {
+  color: #212121;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 30px; }
+  @media screen and (max-width: 992px) {
+    .promo__price-value {
+      font-size: 19px;
+      line-height: 20px; } }
+  @media screen and (max-width: 576px) {
+    .promo__price-value {
+      display: block;
+      text-align: center; } }
+  @media screen and (max-width: 576px) {
+    .promo__price-value {
+      font-size: 19px; } }
+
+.promo__button {
+  color: #fa2a2a;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 16px; }
+  @media screen and (max-width: 992px) {
+    .promo__button {
+      font-size: 12px; } }
 
 .wrapper {
   width: 79.16667%;
@@ -959,6 +1029,125 @@ body {
   @media screen and (max-width: 576px) {
     .featured__spec-secondary {
       margin-bottom: 16px; } }
+
+.promo {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 120px 0 100px; }
+  @media screen and (max-width: 992px) {
+    .promo {
+      padding: 60px 0 20px; } }
+  @media screen and (max-width: 576px) {
+    .promo {
+      padding: 40px 0 10px; } }
+
+.promo__heading {
+  max-width: 60%;
+  margin: 0 auto;
+  margin-bottom: 60px; }
+  @media screen and (max-width: 576px) {
+    .promo__heading {
+      margin-bottom: 30px; } }
+
+.promo__divider {
+  height: 100%;
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 992px) {
+    .promo__divider {
+      flex-wrap: wrap;
+      justify-content: space-evenly; } }
+
+.promo__article {
+  position: relative;
+  padding: 20px 1.66667% 28px;
+  box-sizing: border-box;
+  width: 23.07018%;
+  border: 1px solid #f3f3f5;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 15px 25px -20px rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 992px) {
+    .promo__article {
+      width: 40%;
+      padding: 25px 2.19298% 30px;
+      margin-bottom: 30px; } }
+  @media screen and (max-width: 576px) {
+    .promo__article {
+      width: 70%;
+      padding: 20px 15px 35px; } }
+
+.promo__img {
+  height: 100px;
+  width: 100%;
+  max-width: 185px;
+  margin: 0 auto 13px; }
+
+.promo__caption {
+  display: block;
+  margin-bottom: 5px; }
+
+.promo__article-heading {
+  margin-bottom: 15px; }
+
+.promo__list {
+  list-style-type: none;
+  margin-bottom: 19px; }
+  @media screen and (max-width: 576px) {
+    .promo__list {
+      width: 100%;
+      max-width: 162px;
+      margin: 0 auto 15px; } }
+
+.promo__item {
+  position: relative;
+  padding-left: 18px;
+  word-wrap: break-word; }
+  .promo__item:before {
+    content: url(../assets/icons/Path.svg);
+    display: block;
+    font-size: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.promo__price-caption {
+  margin-bottom: 3px;
+  display: block; }
+  @media screen and (max-width: 576px) {
+    .promo__price-caption {
+      margin-bottom: 7px; } }
+
+.promo__button {
+  position: absolute;
+  right: 20px;
+  bottom: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 100%;
+  max-width: 30.41825%;
+  border-radius: 17px;
+  background-color: rgba(250, 42, 42, 0.1); }
+  .promo__button:hover {
+    background-color: #fa2a2a;
+    color: #fff; }
+  @media screen and (max-width: 992px) {
+    .promo__button {
+      right: 25px;
+      bottom: 25px;
+      max-width: 34.22053%; } }
+  @media screen and (max-width: 576px) {
+    .promo__button {
+      position: relative;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 40px;
+      max-width: 140px; } }
 
 /* Slider */
 .slick-slider {
