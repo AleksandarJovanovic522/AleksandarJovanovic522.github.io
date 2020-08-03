@@ -2,7 +2,6 @@ const Navigation = {
 	hamburger: document.querySelector('.js-nav-hamburger'),
 	navList: document.querySelector('.js-nav-list'),
 	navItems: document.querySelectorAll('.js-nav-item'),
-	navItemDrop: document.querySelector('.js-nav-item-drop'),
 	navLinkDrop: document.querySelector('.js-nav-link-drop'),
 	navChevron: document.querySelector('.js-nav-chevron'),
 	navDropList: document.querySelector('.js-nav-drop-list'),
@@ -66,21 +65,22 @@ const Plugins = {
 	},
 };
 Plugins.init();
-// const Accordion = {
-// 	init: function () {
-// 		this.bindEvents();
-// 	},
-// 	bindEvents: function () {
-// 		if ($('main').hasClass('about')) {
-// 			$('.js-accordion').on('click', function () {
-// 				const $this = $(this);
-// 				debugger;
-// 				$this.toggleClass('accordion-active');
-// 				$this.next().stop().slideToggle();
-// 				$this.parent().find('.js-panel').not($this.next()).slideUp().prev().removeClass('accordion-active');
-// 			});
-// 		}
-// 	},
-// };
-// Accordion.init();
-// AOS.init();
+const Contact = {
+	jsInput: document.querySelector('.js-email'),
+	jsPlaceholder: document.querySelector('.js-email-placeholder'),
+	init: function () {
+		this.bindEvents();
+	},
+	bindEvents: function () {
+		const _this = this;
+
+		this.jsInput.addEventListener('keyup', function () {
+			if (_this.jsInput.value) {
+				_this.jsPlaceholder.classList.add('contact__placeholder--active');
+			} else {
+				_this.jsPlaceholder.classList.remove('contact__placeholder--active');
+			}
+		});
+	},
+};
+Contact.init();

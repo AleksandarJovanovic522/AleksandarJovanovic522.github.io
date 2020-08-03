@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Audi</title>
+		<link href="dist/assets/logo/Audi.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="dist/css/style.css" />
 	</head>
 	<body>
@@ -49,50 +50,51 @@
 					</div>
 				</div>
 			</nav>
-			<section class="hero-slider">
-				<div class="js-hero-slider">
-					<article class="hero-slider__slide" style="background: url(dist/assets/images/header-img-1440.jpg) center / cover no-repeat;">
-						<div class="wrapper">
-							<div class="hero-slider__text">
-								<span class="hero-slider__span span--red">new arrival</span>
-								<h2 class="hero-slider__heading">Expectations put limitations on possibilities.</h2>
-								<p class="hero-slider__paragraph">
-									The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.
-								</p>
-							</div>
-						</div>
-					</article>
-					<article class="hero-slider__slide" style="background: url(dist/assets/images/header-img-1440.jpg) center / cover no-repeat;">
-						<div class="wrapper">
-							<div class="hero-slider__text">
-								<span class="hero-slider__span span--red">new arrival</span>
-								<h2 class="hero-slider__heading">Expectations put limitations on possibilities.</h2>
-								<p class="hero-slider__paragraph">
-									The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.
-								</p>
-							</div>
-						</div>
-					</article>
-					<article class="hero-slider__slide" style="background: url(dist/assets/images/header-img-1440.jpg) center / cover no-repeat;">
-						<div class="wrapper">
-							<div class="hero-slider__text">
-								<span class="hero-slider__span span--red">new arrival</span>
-								<h2 class="hero-slider__heading">Expectations put limitations on possibilities.</h2>
-								<p class="hero-slider__paragraph">
-									The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.
-								</p>
-							</div>
-						</div>
-					</article>
-				</div>
-				<div class="hero-slider__prev">
-					<img src="dist/assets/icons/chevron-right.svg" alt="Prev arrow" class="hero-slider__prev-arrow" />
-				</div>
-				<div class="hero-slider__next">
-					<img src="dist/assets/icons/chevron-right.svg" alt="Prev arrow" class="hero-slider__next-arrow" />
-				</div>
-			</section>
 		</header>
+		<section class="hero-slider">
+			<div class="js-hero-slider">
+				<article class="hero-slider__slide" style="background: url(dist/assets/images/header-img-1440.jpg) center / cover no-repeat;">
+					<div class="wrapper">
+						<div class="hero-slider__text">
+							<span class="hero-slider__span span--red">new arrival</span>
+							<h2 class="hero-slider__heading">Expectations put limitations on possibilities.</h2>
+							<p class="hero-slider__paragraph">
+								The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="hero-slider__slide" style="background: url(dist/assets/images/header-img-1440.jpg) center / cover no-repeat;">
+					<div class="wrapper">
+						<div class="hero-slider__text">
+							<span class="hero-slider__span span--red">new arrival</span>
+							<h2 class="hero-slider__heading">Expectations put limitations on possibilities.</h2>
+							<p class="hero-slider__paragraph">
+								The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.
+							</p>
+						</div>
+					</div>
+				</article>
+				<article class="hero-slider__slide" style="background: url(dist/assets/images/header-img-1440.jpg) center / cover no-repeat;">
+					<div class="wrapper">
+						<div class="hero-slider__text">
+							<span class="hero-slider__span span--red">new arrival</span>
+							<h2 class="hero-slider__heading">Expectations put limitations on possibilities.</h2>
+							<p class="hero-slider__paragraph">
+								The Audi Q8 offers a unique performance that blends sport and utility into a momentous SUV design.
+							</p>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="hero-slider__prev">
+				<img src="dist/assets/icons/chevron-right.svg" alt="Prev arrow" class="hero-slider__prev-arrow" />
+			</div>
+			<div class="hero-slider__next">
+				<img src="dist/assets/icons/chevron-right.svg" alt="Prev arrow" class="hero-slider__next-arrow" />
+			</div>
+		</section>
+
 		<main class="main">
 			<section class="about">
 				<div class="about__wrapper wrapper">
@@ -157,7 +159,7 @@
 			</section>
 			<section class="promo">
 				<h2 class="promo__heading section-heading">You might take a look...</h2>
-				<div class="promo__divider wrapper">
+				<div class="promo__wrapper wrapper">
 					<article class="promo__article">
 						<div
 							class="promo__img"
@@ -231,7 +233,38 @@
 					</article>
 				</div>
 			</section>
+			<section class="contact">
+				<div class="contact__wrapper wrapper">
+					<article class="contact__text">
+						<span class="contact__span span--red">Contact us</span>
+						<h2 class="contact__heading">
+							If you have any questions, don’t hesitate to contact us.
+						</h2>
+						<div class="contact__hero-img" style="background-image: url(dist/assets/images/contact-form-img.png);"></div>
+					</article>
+					<form class="contact__form">
+						<div class="contact__input-placeholder">
+							<input type="text" class="contact__input" required />
+							<div class="contact__placeholder">Enter your name <span class="contact__asterisk">*</span></div>
+						</div>
+						<div class="contact__input-placeholder">
+							<input type="email" class="contact__input js-email" required />
+							<div class="contact__placeholder js-email-placeholder">Enter your email <span class="contact__asterisk">*</span></div>
+						</div>
+						<div class="contact__textarea-placeholder">
+							<textarea name="textarea" class="contact__textarea" required></textarea>
+							<div class="contact__placeholder">Your message <span class="contact__asterisk">*</span></div>
+						</div>
+						<button type="submit" class="contact__submit">Submit</button>
+					</form>
+				</div>
+			</section>
 		</main>
+		<footer class="footer">
+			<span class="footer__rights">&copy 2020 FSD. All Rights Reserved</span>
+			<a href="javscript:;" class="footer__terms">Terms of agreement</a>
+			<a href="javscript:;" class="footer__privacy">Privacy policy</a>
+		</footer>
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="dist/js/plugins/slick.min.js"></script>
