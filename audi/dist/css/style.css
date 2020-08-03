@@ -1075,7 +1075,8 @@ body {
       margin-bottom: 30px; } }
   @media screen and (max-width: 576px) {
     .promo__article {
-      width: 70%;
+      width: 85%;
+      max-width: 360px;
       padding: 20px 15px 35px; } }
 
 .promo__img {
